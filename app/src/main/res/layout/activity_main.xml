@@ -62,7 +62,7 @@
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/hint_white"
                 android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
@@ -102,7 +102,7 @@
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/hint_white"
                 android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
