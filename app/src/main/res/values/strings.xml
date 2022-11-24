@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BmiCalculator</string>
+    <string name="et_weight">weight</string>
+    <string name="et_height">height</string>
+</resources>
