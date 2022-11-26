@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">BmiCalculator</string>
-    <string name="et_weight">Enter Weight</string>
-    <string name="et_height">Enter Height</string>
+    <string name="et_weight">0</string>
+    <string name="et_height">0</string>
     <string name="button_name">Submit</string>
+    <string name="tv_ft">ft</string>
+    <string name="tv_kg">kg</string>
 </resources>
