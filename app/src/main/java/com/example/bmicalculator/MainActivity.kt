@@ -24,26 +24,33 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateBMI():Float{
-        var bmi = 0f
+        var bmi: Float
 
         binding.apply {
-            btSubmit.setOnClickListener {
                 val height:Float= etHeight.text.toString().toFloat()*oneftMeter
                 val weight = etWeight.text.toString().toFloat()
                 bmi = weight/(height*height)
             }
-        }
         return bmi
-    }
+        }
+
 
     private fun showBmiResult(){
-        val bmiValue =  calculateBMI()
-        Log.d("lalit", bmiValue.toString())
-        if(bmiValue < 18.5) {
-            binding.apply {
+        val bmiValue =  String.format("%.1f", calculateBMI()).toFloat()
+
+        binding.apply {
+                    if(bmiValue < 18.5) {
+
                 tvBmiValue.text = bmiValue.toString()
                 tvBmiValue.setTextColor(Color.parseColor("#FF0000"))
-            }
+                        Log.d("lalit", "red")
+
+        }else if(bmiValue in 18.5..25.0){
+                        tvBmiValue.text = bmiValue.toString()
+                        tvBmiValue.setTextColor(Color.parseColor("#00FF00"))
         }
     }
-}
+    }
+    }
+
+
